@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.0-RC"
-    kotlin("kapt") version "1.5.0-RC"
+    kotlin("jvm") version "1.5.10"
+    kotlin("kapt") version "1.5.10"
 }
 
 dependencies {
@@ -10,7 +10,7 @@ dependencies {
     implementation(project(":delegate-lib"))
 
     // Needed to reproduce the bug (condition 3)
-    kapt("com.google.dagger:dagger-compiler:2.35")
+    kapt("com.google.dagger:dagger-compiler:2.37")
 }
 
 allprojects {
